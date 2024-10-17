@@ -33,13 +33,6 @@ public class CommandOpen extends BaseCommand {
             return true;
         }
 
-        // Check if player is in opening list first.
-        if (this.crateManager.isInOpeningList(player)) {
-            Messages.already_opening_crate.sendMessage(player, "{crate}", crateName);
-
-            return true;
-        }
-
         if (MiscUtils.isInventoryFull(player)) {
             Messages.inventory_not_empty.sendMessage(player, "{crate}", crateName);
 

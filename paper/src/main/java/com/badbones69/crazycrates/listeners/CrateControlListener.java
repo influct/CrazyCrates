@@ -180,11 +180,6 @@ public class CrateControlListener implements Listener {
             }
 
             if (!useQuickCrateAgain) {
-                if (this.crateManager.isInOpeningList(player)) {
-                    Messages.already_opening_crate.sendMessage(player, "{crate}", fancyName);
-
-                    return;
-                }
 
                 if (this.crateManager.getCratesInUse().containsValue(crateLocation.getLocation())) {
                     Messages.crate_in_use.sendMessage(player, "{crate}", fancyName);

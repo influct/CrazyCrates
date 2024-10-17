@@ -132,12 +132,6 @@ public class CrateMainMenu extends StaticInventoryBuilder {
                             return;
                         }
 
-                        if (this.crateManager.isInOpeningList(this.player)) {
-                            Messages.already_opening_crate.sendMessage(this.player, "{crate}", fancyName);
-
-                            return;
-                        }
-
                         boolean hasKey = false;
                         KeyType keyType = KeyType.virtual_key;
 
