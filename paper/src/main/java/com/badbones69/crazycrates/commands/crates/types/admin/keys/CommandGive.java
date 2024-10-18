@@ -102,7 +102,7 @@ public class CommandGive extends BaseCommand {
 
             if (event.isCancelled()) return;
 
-            Messages.obtaining_keys.sendMessage(player, placeholders);
+            //Messages.obtaining_keys.sendMessage(player, placeholders);
 
             if (crate.getCrateType() == CrateType.crate_on_the_go) {
                 MiscUtils.addItem(player, crate.getKey(amount, player));
