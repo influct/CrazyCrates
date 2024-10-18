@@ -622,13 +622,7 @@ public class CrateManager {
             }
 
             case fire_cracker -> {
-                if (this.cratesInUse.containsValue(location)) {
-                    Messages.crate_in_use.sendMessage(player, "{crate}", fancyName);
 
-                    removePlayerFromOpeningList(player);
-
-                    return;
-                }
 
                 if (virtualCrate) {
                     final Map<String, String> placeholders = new HashMap<>();
@@ -664,14 +658,6 @@ public class CrateManager {
             }
 
             case quick_crate -> {
-                if (this.cratesInUse.containsValue(location)) {
-                    Messages.crate_in_use.sendMessage(player, "{crate}", fancyName);
-
-                    removePlayerFromOpeningList(player);
-
-                    return;
-                }
-
                 if (virtualCrate) {
                     final Map<String, String> placeholders = new HashMap<>();
 
